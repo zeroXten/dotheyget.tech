@@ -1,0 +1,14 @@
+# Site settings
+title: Do they get tech?
+email: fraser.scott@gmail.com
+description: > 
+  Which politicians understand technology, privacy and security - and which do not?
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://dotheyget.tech" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+sass:
+  sass_dir: _sass
+  style: :compressed

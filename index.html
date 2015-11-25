@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="pure-u-1 headr">
+  <h1>Do they get tech?</h1>
+</div>
+
+<div class="pure-u-1-2">
+  <div class="category good">
+    <h2>Yes</h2>
+    {% for person in site.data.good %}
+      {% include person.html person=person %}
+    {% endfor %}
+  </div>
+</div>
+
+<div class="pure-u-1-2">
+  <div class="category bad">
+    <h2>No</h2>
+    {% for person in site.data.bad %}
+      {% include person.html person=person %}
+    {% endfor %}
+  </div>
+</div>
+
+<div class="pure-u-1">
+  <div class="footr">
+    <p>Additions or inaccuracies? Create a PR or issue here: <a href="https://github.com/zeroXten/dotheyget.tech">https://github.com/zeroXten/dotheyget.tech</a></p>
+    <p><a href="https://twitter.com/zeroXten">@zeroXten</a></p>
+  </div>
+</div>

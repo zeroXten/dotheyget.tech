@@ -1,0 +1,19 @@
+<div class="person">
+  <div class="pure-g">
+    <div class="pure-u-1-4">
+      <div class="image">
+        <img src="{{ site.url }}/images/{{ include.person[1].image }}"/>
+      </div>
+    </div>
+    <div class="pure-u-3-4">
+      <div class="details">
+        <p class="name">{{ include.person[1].name }}</p>
+        <p class="job">{{ include.person[1].job }}</p>
+        {% for quote in include.person[1].quotes %}
+          <p class="quote">&quot;{{ quote.quote }}&quot;</p>
+          <p class="reference"> &#45; <a href="{{ quote.reference }}">{{ quote.reference }}</a></p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
