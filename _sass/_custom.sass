@@ -5,6 +5,7 @@ html, button, input, select, textarea, .pure-g [class *= "pure-u"]
   font-family: 'Roboto', sans-serif
 
 body
+  margin: 0
   color: white
   background-color: black
 
@@ -17,12 +18,15 @@ h2
 
 a
   font-size: 1em
+  color: #B8B8B8  
 
-div .headr
+div .header
   text-align: center
+  margin-bottom: 1em
 
-div .footr
+div .footer
   text-align: center
+  margin-top: 1em
 
 div .category
   padding-top: 1em
@@ -34,19 +38,33 @@ div .category
 
 div .good 
   background-color: $good
-  margin-left: 4em
-  margin-right: 2em
+  margin-left: 1em
+  margin-right: 1em
+  margin-bottom: 1em
 
 div .bad
   background-color: $bad
-  margin-left: 2em
-  margin-right: 4em
+  margin-left: 1em
+  margin-right: 1em
+  margin-bottom: 1em
 
 div .person
   margin-bottom: 2em
   padding-right: 1em
   border-style: solid
   background-color: black
+  overflow-wrap: break-word
+  word-wrap: break-word
+  -ms-word-break: break-all
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all
+  /* Instead use this non-standard one: */
+  word-break: break-word
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto
+  -moz-hyphens: auto
+  -webkit-hyphens: auto
+  hyphens: auto
   div .image
     width: auto
     max-width: 150px
