@@ -7,7 +7,7 @@
     </div>
     <div class="pure-u-3-4">
       <div class="details">
-        <p class="name">{{ include.person[1].name }}</p>
+        <p class="name"><a href="{{ include.person[1].url }}">{{ include.person[1].name }}</a></p>
         <p class="job">{{ include.person[1].job }}</p>
         {% for quote in include.person[1].quotes %}
           <p class="quote">&quot;{{ quote.quote }}&quot;</p>
