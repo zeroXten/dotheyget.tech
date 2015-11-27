@@ -115,9 +115,17 @@ div .person {
   .details {
     padding-left: 1em;
     padding-right: 1em;
-    .name {
-      font-size: 2em;
-      line-height: 0.1em;
+    @media screen and (max-width: $max_media_width) {
+      .name {
+        font-size: 8vw;
+        line-height: 0.1em;
+      }
+    }
+    @media screen and (min-width: $min_media_width) {
+      .name {
+        font-size: 2em;
+        line-height: 0.1em;
+      }
     }
     .quote {
       font-style: italic;
